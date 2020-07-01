@@ -26,6 +26,11 @@ jobs:
         with:
           source: "CNAME"
           target: "dist/CNAME"
+      - name: Copy robots.txt to build
+        uses: canastro/copy-file-action@master
+        with:
+          source: "robots.txt"
+          target: "dist/robots.txt"
       - name: Deploy
         uses: s0/git-publish-subdir-action@master
         env:

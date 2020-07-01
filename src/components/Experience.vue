@@ -22,7 +22,7 @@
       v-img.ma-auto.section-profile.mt-5(src='@/assets/skills.svg',
         lazy-src='@/assets/skills.svg')
       p.header.text-center Skills
-      v-card#skills-table(flat='')
+      v-card#skills-card(flat='')
         v-card-title Skills
           v-spacer
           v-text-field(v-model='search', append-icon='mdi-magnify',

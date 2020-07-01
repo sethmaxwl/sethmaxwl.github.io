@@ -2,7 +2,8 @@
   div
     v-app-bar#navbar(:flat='true', :color='"#1d1d1d"',
       fixed='', flat='', dark='')
-      v-btn#navbar-icon(fab='', depressed='', color='#1d1d1d')
+      v-btn#navbar-icon(fab='', depressed='', color='#1d1d1d',
+        aria-label='navbar menu toggle')
         v-img(src='@/assets/pineapple.svg', @click.stop='toggleDrawer()',
           max-width='40', lazy-src='@/assets/pineapple.svg', eager='')
     v-navigation-drawer#drawer(v-model='drawer',
