@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="min-logo.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 92.651886 92.227417"
+   height="92.227417mm"
+   width="92.651886mm">
+  <defs
+     id="defs2" />
+  <sodipodi:namedview
+     inkscape:window-maximized="0"
+     inkscape:window-y="23"
+     inkscape:window-x="0"
+     inkscape:window-height="1174"
+     inkscape:window-width="1252"
+     fit-margin-bottom="0"
+     fit-margin-right="0"
+     fit-margin-left="0"
+     fit-margin-top="0"
+     showgrid="false"
+     inkscape:document-rotation="0"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="mm"
+     inkscape:cy="331.91896"
+     inkscape:cx="135.1585"
+     inkscape:zoom="1.0572997"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-10.038767,-147.81708)"
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <rect
+       y="147.81708"
+       x="10.038767"
+       height="92.227417"
+       width="92.651886"
+       id="rect835"
+       style="fill:#3e3e3e;fill-opacity:1;stroke-width:6.30888;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:12.6178, 6.30888" />
+    <g
+       transform="matrix(1.0894674,0,0,1.0841285,-65.109364,89.196117)"
+       stroke="#1d1d1d"
+       id="g1093">
+      <ellipse
+         ry="21.184999"
+         rx="15.47"
+         cy="110.066"
+         cx="111.223"
+         fill="#e9262c"
+         stroke-width="2.381"
+         id="ellipse1081" />
+      <path
+         d="m 113.919,86.912 c 0,0 -1.27,-9.762 -3.655,-13.522 -2.386,-3.76 -5.444,-6.485 -9.84,-7.774 -4.398,-1.29 -15.3,1.898 -15.3,1.898 0,0 7.753,1.96 10.732,3.534 2.98,1.574 4.905,2.607 7.112,5.368 2.206,2.76 5.328,11.172 5.328,11.172 z"
+         fill="#a87981"
+         stroke-width="2.362"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1083" />
+      <path
+         d="m 111.263,83.528 c 0,0 1.269,-7.887 3.655,-10.924 2.386,-3.037 5.443,-5.24 9.84,-6.281 4.397,-1.042 15.3,1.534 15.3,1.534 0,0 -7.754,1.583 -10.733,2.855 -2.98,1.271 -4.905,2.105 -7.111,4.336 -2.207,2.23 -5.328,9.026 -5.328,9.026 z"
+         fill="#a87981"
+         stroke-width="2.123"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1085" />
+      <path
+         d="m 105.153,86.094 c 0,0 0.846,-9.084 1.938,-13.437 1.092,-4.352 4.628,-11.791 4.628,-11.791 0,0 3.767,7.1 4.844,11.517 1.076,4.417 1.614,13.711 1.614,13.711 z"
+         fill="#a87981"
+         stroke-width="2.592"
+         stroke-linejoin="round"
+         id="path1087" />
+      <path
+         d="m 111.734,88.126 c 0,0 -2.709,-8.672 -5.827,-11.703 -3.118,-3.03 -6.83,-5.012 -11.812,-5.47 -4.983,-0.457 -16.473,4.216 -16.473,4.216 0,0 8.744,0.522 12.214,1.468 3.47,0.947 5.716,1.573 8.503,3.725 2.786,2.152 7.337,9.294 7.337,9.294 z m 0,0 c 0,0 2.91,-8.606 6.1,-11.563 3.187,-2.957 6.945,-4.85 11.937,-5.191 4.992,-0.34 16.368,4.6 16.368,4.6 0,0 -8.753,0.317 -12.244,1.182 -3.492,0.865 -5.752,1.438 -8.588,3.524 -2.836,2.086 -7.553,9.12 -7.553,9.12 z"
+         fill="#a87981"
+         stroke-width="2.381"
+         stroke-linecap="round"
+         stroke-linejoin="round"
+         id="path1089" />
+      <path
+         d="m 101.083,114.19 c 0,0 -3.053,-9.001 -0.047,-14.373 3.006,-5.372 9.085,-7.409 9.085,-7.409 0,0 -4.012,4.855 -5.833,8.93 -1.82,4.074 -3.205,12.853 -3.205,12.853 z"
+         fill="#ffffff"
+         stroke-width="0.91"
+         stroke-linejoin="round"
+         id="path1091" />
+    </g>
+  </g>
+</svg>
