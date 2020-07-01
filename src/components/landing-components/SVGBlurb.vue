@@ -1,7 +1,8 @@
 <template lang="pug">
   v-row
     v-col
-      v-img.ma-auto(:src='require(`../../assets/${svg}.svg`)', :max-width='svgSize')
+      v-img.ma-auto(:src='require(`../../assets/${svg}.svg`)',
+        :max-width='svgSize', :lazy-src='require(`../../assets/${svg}.svg`)')
     v-col
       p.subheader.text-center {{ title }}
       p.body.text-center {{ content }}
@@ -12,19 +13,19 @@ export default {
   name: 'SVGBlurb',
   props: {
     svg: {
-      type: String
+      type: String,
     },
     title: {
-      type: String
+      type: String,
     },
     content: {
-      type: String
-    }
+      type: String,
+    },
   },
   data() {
     return {
-      svgSize: 225
-    }
-  }
-}
+      svgSize: 225,
+    };
+  },
+};
 </script>

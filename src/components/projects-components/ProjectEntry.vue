@@ -12,7 +12,7 @@
         v-carousel(show-arrows-on-hover='', height='auto',
           hide-delimiter-background='', interval='10000')
           v-carousel-item(v-for='(photo, i) in project.photos', :key='i')
-            v-img.carousel-image(:src='photo', contain='')
+            v-img.carousel-image(:src='photo', contain='', :lazy-src='photo')
         v-row
           v-col
             v-card-text.card-subheader Features

@@ -1,13 +1,16 @@
 <template lang='pug'>
   div
-    v-app-bar#navbar(:flat='true', :color='"#1d1d1d"', fixed='', flat='', dark='')
+    v-app-bar#navbar(:flat='true', :color='"#1d1d1d"',
+      fixed='', flat='', dark='')
       v-btn#navbar-icon(fab='', depressed='', color='#1d1d1d')
-        v-img(src='@/assets/pineapple.svg', @click.stop='toggleDrawer()', max-width='40')
-    v-navigation-drawer#drawer(v-model='drawer', temporary='', app='', fixed='', dark='')
+        v-img(src='@/assets/pineapple.svg', @click.stop='toggleDrawer()',
+          max-width='40', lazy-src='@/assets/pineapple.svg', eager='')
+    v-navigation-drawer#drawer(v-model='drawer',
+      temporary='', app='', fixed='', dark='')
       v-list(nav='')
         v-list-item#navbar-profile.ma-auto(two-line='')
           v-list-item-content
-            v-img(src='@/assets/profile.svg')
+            v-img(src='@/assets/profile.svg', lazy-src='@/assets/profile.svg')
         v-list-item-title.text-center Seth Maxwell
         v-divider
         template(v-for='item in links')
@@ -19,7 +22,7 @@
 </template>
 
 <script>
-import { utility } from '@/mixins/utility'
+import {utility} from '@/mixins/utility';
 
 export default {
   name: 'Navbar',
@@ -31,27 +34,27 @@ export default {
         {
           link: '/',
           icon: 'mdi-home',
-          title: 'Home'
+          title: 'Home',
         },
         {
           link: '/experience',
           icon: 'mdi-briefcase',
-          title: 'Experience'
+          title: 'Experience',
         },
         {
           link: '/projects',
           icon: 'mdi-folder-multiple',
-          title: 'Projects'
-        }
-      ]
-    }
+          title: 'Projects',
+        },
+      ],
+    };
   },
   methods: {
     toggleDrawer() {
-      this.drawer = !this.drawer
-    }
+      this.drawer = !this.drawer;
+    },
   },
-}
+};
 </script>
 
 <style lang="scss">

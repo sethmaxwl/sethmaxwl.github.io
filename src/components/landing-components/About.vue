@@ -2,12 +2,14 @@
 #about
   v-card#landing-about(outlined='', color='#fbf7f5')
     v-container
-      v-img.ma-auto.mt-5.section-profile(src='@/assets/profile.svg')
+      v-img.ma-auto.mt-5.section-profile(src='@/assets/profile.svg',
+        lazy-src='@/assets/profile.svg')
       v-spacer
       p.header.text-center Hello There!
       p.body.text-center {{ bio }}
       v-divider.mt-9
-      v-img.ma-auto.mt-8.section-profile(src='@/assets/workflow.svg')
+      v-img.ma-auto.mt-8.section-profile(src='@/assets/workflow.svg',
+        lazy-src='@/assets/profile.svg')
       p.header.text-center Workflow
       template(v-for='(entry, index) in workflowSections')
         SVGBlurb(:svg='entry.svg', :title='entry.title',

@@ -1,8 +1,10 @@
 <template lang='pug'>
   #experience
-    v-img(src='@/assets/experience.svg', contain='', eager='')
+    v-img(src='@/assets/experience.svg', contain='', eager='',
+      lazy-src='@/assets/experience.svg')
     v-container
-      v-img.ma-auto.section-profile.mt-5(src='@/assets/education.svg')
+      v-img.ma-auto.section-profile.mt-5(src='@/assets/education.svg',
+        lazy-src='@/assets/education.svg')
       p.header.text-center Education
       v-card.pt-2.pb-5(color='#fbf7f5', flat='', tile='')
         v-card-title.card-header Purdue University
@@ -11,12 +13,14 @@
         v-card-text.card-description.pt-0.pb-0 Computer Science
         v-card-text.card-description.pt-0 3.51 GPA
       v-divider
-      v-img.ma-auto.section-profile.mt-5(src='@/assets/work-experience.svg')
+      v-img.ma-auto.section-profile.mt-5(src='@/assets/work-experience.svg',
+        lazy-src='@/assets/work-experience.svg')
       p.header.text-center Work Experience
       template(v-for='(entry, index) in entries')
         WorkEntry(:work='entry')
       v-divider
-      v-img.ma-auto.section-profile.mt-5(src='@/assets/skills.svg')
+      v-img.ma-auto.section-profile.mt-5(src='@/assets/skills.svg',
+        lazy-src='@/assets/skills.svg')
       p.header.text-center Skills
       v-card#skills-table(flat='')
         v-card-title Skills

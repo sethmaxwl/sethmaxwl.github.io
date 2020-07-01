@@ -1,6 +1,7 @@
 <template lang='pug'>
   #four-oh-four
-    v-img(src='@/assets/404.svg', contain='', max-height='600')
+    v-img(src='@/assets/404.svg', contain='', max-height='600',
+      lazy-src='@/assets/404.svg')
     .header.text-center Whoops!
     .subheader.text-center Looks like that page doesn't exist.
 </template>
