@@ -1,6 +1,8 @@
 'use strict';
 
 const GoogleFontsPlugin = require('google-fonts-webpack-plugin');
+const BundleAnalyzerPlugin =
+  require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 module.exports = {
   'entry': 'index.js',
@@ -10,5 +12,6 @@ module.exports = {
         {family: 'IBM Plex Sans Condensed'},
       ],
     }),
+    new BundleAnalyzerPlugin(),
   ],
 };
