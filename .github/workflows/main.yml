@@ -31,6 +31,11 @@ jobs:
         with:
           source: "robots.txt"
           target: "dist/robots.txt"
+      - name: Copy apple-touch-icon to build
+        uses: canastro/copy-file-action@master
+        with:
+            source: "apple-touch-icon.png"
+            target: "dist/apple-touch-icon.png"
       - name: Deploy
         uses: s0/git-publish-subdir-action@master
         env:

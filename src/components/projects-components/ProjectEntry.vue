@@ -14,14 +14,14 @@
           v-carousel-item(v-for='(photo, i) in project.photos', :key='i')
             v-img.carousel-image(:src='photo', contain='', :lazy-src='photo')
         v-row
-          v-col
+          v-col.project-col
             v-card-text.card-subheader Features
             v-list(dense='')
               v-list-item(v-for='(feature, i) in project.features', :key='i')
                 .card-description
                   v-icon mdi-arrow-right
                 | {{ feature }}
-          v-col
+          v-col.project-col
             v-card-text.card-subheader Technologies Used
             v-list(dense='')
               v-list-item(v-for='(lang, i) in project.technologies', :key='i')
@@ -41,3 +41,9 @@ export default {
   },
 };
 </script>
+
+<style lang='scss'>
+  .project-col {
+    min-width: 300px;
+  }
+</style>
