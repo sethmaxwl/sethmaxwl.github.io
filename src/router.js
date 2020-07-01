@@ -1,12 +1,12 @@
-import Vue from 'vue'
-import Router from 'vue-router'
+import Vue from 'vue';
+import Router from 'vue-router';
 
-import Landing from '@/components/Landing'
-import Experience from '@/components/Experience'
-import Projects from '@/components/Projects'
-import FourOhFour from '@/components/FourOhFour'
+import Landing from '@/components/Landing';
+import Experience from '@/components/Experience';
+import Projects from '@/components/Projects';
+import FourOhFour from '@/components/FourOhFour';
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   base: '/',
@@ -14,19 +14,19 @@ export default new Router({
   routes: [
     {
       path: '/',
-      component: Landing
+      component: Landing,
     },
     {
       path: '/projects',
-      component: Projects
+      component: Projects,
     },
     {
       path: '/experience',
-      component: Experience
+      component: Experience,
     },
     {
       path: '*',
-      component: FourOhFour
-    }
-  ]
-})
+      component: FourOhFour,
+    },
+  ],
+});
