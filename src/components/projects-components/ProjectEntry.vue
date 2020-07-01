@@ -4,12 +4,13 @@
       v-container
         template(v-if='project.link')
           v-card-title.card-header
-            a.card-subheader(v-if='project.link', :href='project.link', target='blank', ref='noopener noreferrer') {{ project.name }}
+            a.card-subheader(v-if='project.link', :href='project.link',
+              target='blank', ref='noopener noreferrer') {{ project.name }}
         template(v-else='')
           v-card-title.card-header {{ project.name }}
-          
         v-card-text.card-description {{ project.description }}
-        v-carousel(show-arrows-on-hover='', height='auto', hide-delimiter-background='', interval='10000')
+        v-carousel(show-arrows-on-hover='', height='auto',
+          hide-delimiter-background='', interval='10000')
           v-carousel-item(v-for='(photo, i) in project.photos', :key='i')
             v-img.carousel-image(:src='photo', contain='')
         v-row
@@ -35,8 +36,8 @@ export default {
   props: {
     project: {
       type: Object,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>

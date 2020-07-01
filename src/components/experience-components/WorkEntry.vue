@@ -1,7 +1,9 @@
 <template lang='pug'>
   v-card.pt-2.pb-5(color='#fbf7f5', flat='', tile='')
     v-card-title.card-header {{ work.title }}
-    v-card-subtitle.card-subheader.pt-0 {{ work.company }} ({{ work.dates.startDate }} - {{ work.dates.endDate }})
+    v-card-subtitle.card-subheader.pt-0
+      | {{ work.company }}
+      | ({{ work.dates.startDate }} - {{ work.dates.endDate }})
     v-card-text.card-description.pb-0 {{ work.overview }}
     v-card-text.card-subheader Skills
     template(v-for='skill in work.skills')
@@ -17,10 +19,10 @@ export default {
   props: {
     work: {
       type: Object,
-      required: true
-    }
-  }
-}
+      required: true,
+    },
+  },
+};
 </script>
 
 <style lang="scss">

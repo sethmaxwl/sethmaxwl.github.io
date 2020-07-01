@@ -7,8 +7,8 @@
 
 <script>
 export default {
-  name: 'FourOhFour'
-}
+  name: 'FourOhFour',
+};
 </script>
 
 <style lang='scss'>
