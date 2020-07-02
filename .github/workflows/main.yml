@@ -16,31 +16,37 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Copy extra files to dist
+      - name: Copy index.html
         uses: canastro/copy-file-action@master
         with:
           source: "dist/index.html"
           target: "dist/404.html"
+      - name: Copy CNAME 
         uses: canastro/copy-file-action@master
         with:
           source: "CNAME"
           target: "dist/CNAME"
+      - name: Copy robots.txt
         uses: canastro/copy-file-action@master
         with:
           source: "robots.txt"
           target: "dist/robots.txt"
+      - name: Copy apple-touch-icon
         uses: canastro/copy-file-action@master
         with:
           source: "public/apple-touch-icon.png"
           target: "dist/apple-touch-icon.png"
+      - name: Copy chrome-192
         uses: canastro/copy-file-action@master
         with:
           source: "public/chrome-192.png"
           target: "dist/chrome-192.png"
+      - name: Copy chrome-512
         uses: canastro/copy-file-action@master
         with:
           source: "public/chrome-512.png"
           target: "dist/chrome-512.png"
+      - name: Copy manifest.json
         uses: canastro/copy-file-action@master
         with:
           source: "public/manifest.json"
