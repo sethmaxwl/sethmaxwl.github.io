@@ -51,6 +51,11 @@ jobs:
         with:
           source: "public/manifest.json"
           target: "dist/manifest.json"
+      - name: Copy service worker
+        uses: canastro/copy-file-action@master
+        with:
+          source: "service-worker.js"
+          target: "dist/service-worker.js"
       - name: Deploy
         uses: s0/git-publish-subdir-action@master
         env:
