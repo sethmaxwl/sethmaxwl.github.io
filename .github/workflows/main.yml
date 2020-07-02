@@ -56,6 +56,26 @@ jobs:
         with:
           source: "service-worker.js"
           target: "dist/service-worker.js"
+      - name: Copy ms icon 70x70
+        uses: canastro/copy-file-action@master
+        with:
+          source: "public/ms-icon-70x70.png"
+          target: "dist/ms-icon-70x70.png"
+      - name: Copy ms icon 150x150
+        uses: canastro/copy-file-action@master
+        with:
+          source: "public/ms-icon-150x150.png"
+          target: "dist/ms-icon-150x150.png"
+      - name: Copy ms icon 310x310
+        uses: canastro/copy-file-action@master
+        with:
+          source: "public/ms-icon-310x310.png"
+          target: "dist/ms-icon-310x310.png"
+      - name: Copy browserconfig.xml
+        uses: canastro/copy-file-action@master
+        with:
+          source: "public/browserconfig.xml"
+          target: "dist/browserconfig.xml"
       - name: Deploy
         uses: s0/git-publish-subdir-action@master
         env:

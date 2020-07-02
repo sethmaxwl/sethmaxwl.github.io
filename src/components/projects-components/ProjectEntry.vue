@@ -9,10 +9,10 @@
         template(v-else='')
           v-card-title.card-header {{ project.name }}
         v-card-text.card-description {{ project.description }}
-        v-carousel(show-arrows-on-hover='', height='auto',
-          hide-delimiter-background='', interval='10000')
+        v-carousel.ma-auto(show-arrows-on-hover='', height='auto',
+          hide-delimiter-background='', interval='10000', cycle='')
           v-carousel-item(v-for='(photo, i) in project.photos', :key='i')
-            v-img.carousel-image(:src='photo', contain='', :lazy-src='photo')
+            progressive-img(:src='photo', :placeholder='photo')
         v-row
           v-col.project-col
             v-card-text.card-subheader Features
