@@ -1,0 +1,36 @@
+{
+  "short_name": "Seth Maxwell",
+  "name": "Seth Maxwell Digital Portfolio",
+  "description": "Seth Maxwell work experience and project portfolio",
+  "icons": [
+    {
+      "src": "chrome-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "chrome-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#1d1d1d",
+  "display": "minimal-ui",
+  "scope": "/",
+  "theme_color": "#1d1d1d",
+  "shortcuts": [
+    {
+      "short_name": "Experience",
+      "name": "Seth Maxwell Experience",
+      "description": "Work experience, education, and skills",
+      "url": "/experience?source=pwa"
+    },
+    {
+      "short_name": "Projects",
+      "name": "Seth Maxwell Projects",
+      "description": "Seth Maxwell notable projects",
+      "url": "/projects?source=pwa"
+    }
+  ]
+}

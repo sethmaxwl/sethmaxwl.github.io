@@ -16,26 +16,35 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
-      - name: Copy index.html (router workaround)
+      - name: Copy extra files to dist
         uses: canastro/copy-file-action@master
         with:
           source: "dist/index.html"
           target: "dist/404.html"
-      - name: Copy CNAME to build
         uses: canastro/copy-file-action@master
         with:
           source: "CNAME"
           target: "dist/CNAME"
-      - name: Copy robots.txt to build
         uses: canastro/copy-file-action@master
         with:
           source: "robots.txt"
           target: "dist/robots.txt"
-      - name: Copy apple-touch-icon to build
         uses: canastro/copy-file-action@master
         with:
-            source: "apple-touch-icon.png"
-            target: "dist/apple-touch-icon.png"
+          source: "public/apple-touch-icon.png"
+          target: "dist/apple-touch-icon.png"
+        uses: canastro/copy-file-action@master
+        with:
+          source: "public/chrome-192.png"
+          target: "dist/chrome-192.png"
+        uses: canastro/copy-file-action@master
+        with:
+          source: "public/chrome-512.png"
+          target: "dist/chrome-512.png"
+        uses: canastro/copy-file-action@master
+        with:
+          source: "public/manifest.json"
+          target: "dist/manifest.json"
       - name: Deploy
         uses: s0/git-publish-subdir-action@master
         env:
