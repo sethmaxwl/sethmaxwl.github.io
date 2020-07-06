@@ -2,8 +2,9 @@
   #projects
     v-img(src='@/assets/projects.svg', contain='', eager='',
       lazy-src='@/assets/projects.svg')
-    ProjectEntry(v-for='project in projects',
-      v-bind:key='project.name', :project='project')
+    main
+      ProjectEntry(v-for='project in projects',
+        v-bind:key='project.name', :project='project')
 </template>
 
 <script>

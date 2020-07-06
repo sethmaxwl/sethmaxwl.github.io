@@ -1,7 +1,8 @@
 <template lang='pug'>
   #landing
     Splash
-    About
+    main
+      About
 </template>
 
 <script>
