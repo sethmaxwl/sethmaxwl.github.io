@@ -17,11 +17,11 @@
           v-bind:class="{ 'pb-15': index !== workflowSections.length - 1}")
       v-divider.mt-9
       p.header.text-center Learn More About Me
-      v-row.text-center.mb-5
-        v-col
-          v-btn(color='#01cbd7', @click='redirect("/experience")') Experience
-        v-col
-          v-btn(color='#01cbd7', @click='redirect("/projects")') Projects
+      v-row(align='center')
+        v-btn.ml-auto.mr-3(color='primary',
+          @click='redirect("/experience")') Experience
+        v-btn.mr-auto.ml-3(color='primary',
+          @click='redirect("/projects")') Projects
 </template>
 
 <script>

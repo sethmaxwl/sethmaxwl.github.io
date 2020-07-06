@@ -28,9 +28,8 @@
           v-text-field(v-model='search', append-icon='mdi-magnify',
             label='Search', single-line='', hide-details='')
         v-data-table#skills-table(:headers='skillTableHeaders', :items='skills',
-          :sort-by='["familiarity", "years"]', :search='search',
-          hide-default-footer='', dense='',
-          :options='{ itemsPerPage: skills.length }')
+          :search='search', hide-default-footer='', dense='',
+          disable-pagination='', disable-sort='')
 
 
 </template>
