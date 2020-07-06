@@ -3,9 +3,11 @@
     v-card(flat='')
       v-container
         template(v-if='project.link')
-          v-card-title.card-header
-            a.card-subheader(v-if='project.link', :href='project.link',
-              target='blank', ref='noopener noreferrer') {{ project.name }}
+          v-card-title
+            .card-subheader {{ project.name }}
+            a.link-icon.ml-1(v-if='project.link', :href='project.link',
+              target='blank', ref='noopener noreferrer')
+              v-icon mdi-open-in-new
         template(v-else='')
           v-card-title.card-header {{ project.name }}
         v-card-text.card-description {{ project.description }}
@@ -45,5 +47,13 @@ export default {
 <style lang='scss'>
   .project-col {
     min-width: 300px;
+  }
+  .link-icon {
+    text-decoration: none;
+  }
+  .link-icon:hover {
+    i {
+      color: rgb(105, 151, 244);
+    }
   }
 </style>
