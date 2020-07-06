@@ -44,7 +44,12 @@
 max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-const precacheConfig = [];
+const precacheConfig = [
+  '/*',
+  '/css/*',
+  '/js/*',
+  '/img/*',
+];
 const cacheName = 'sw-precache-v3-sw-precache-' +
   (self.registration ? self.registration.scope : '');
 
