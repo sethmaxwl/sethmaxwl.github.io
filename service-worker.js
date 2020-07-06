@@ -45,9 +45,13 @@ max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
 const precacheConfig = [
-  '/*',
-  '/css/*',
-  '/js/*',
+  '/404.html',
+  '/index.html',
+  '/favicon.ico',
+  '/css/app.*.css',
+  '/css/chunk-vendors.*.css',
+  '/js/app.*',
+  '/js/chunk-vendors.*',
   '/img/*',
 ];
 const cacheName = 'sw-precache-v3-sw-precache-' +
