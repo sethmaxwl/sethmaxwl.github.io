@@ -38,6 +38,20 @@
   letter-spacing: -.0083333333em !important;
 }
 
+.card-link {
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  letter-spacing: -.0083333333em !important;
+  text-decoration: none;
+}
+
+.card-link:hover {
+  i {
+    color: #1976d2 !important;
+  }
+}
+
 .v-card__title {
   word-break: normal !important;
 }

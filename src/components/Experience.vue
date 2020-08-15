@@ -53,8 +53,8 @@ export default {
             endDate: 'August 2020',
           },
           overview: `
-            Instrumented Google Cloud Pub/Sub
-            client libraries with OpenTelemetry.
+            Instrumented Node.js and Python Google Cloud Pub/Sub
+            client libraries with OpenTelemetry tracing.
           `,
           skills: [
             'Speaking with stakeholders to determine project requirements.',
@@ -63,6 +63,12 @@ export default {
             'Writing easily readable and maintainable code.',
             'Writing full code coverage tests.',
             'Contributing to an open source library.',
+          ],
+          links: [
+            {
+              description: 'Google Cloud Medium Blog Post',
+              link: 'https://medium.com/@sethmaxwl/integrating-opentelemetry-into-cloud-pub-sub-19aacd83692a',
+            },
           ],
         },
         {

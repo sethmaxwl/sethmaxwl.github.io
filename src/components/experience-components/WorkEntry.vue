@@ -11,6 +11,15 @@
         span.card-description
           v-icon mdi-arrow-right
         |  {{ skill }}
+    template(v-if='work.links')
+      v-card-text.card-subheader Relevant Links
+      template(v-for='link in work.links')
+        v-row.skills.pl-7.pb-2.d-block(align='center')
+          span.card-description {{ link.description }}
+            a.card-link.ml-1(:href='link.link',
+              target='blank', ref='noopener noreferrer')
+              v-icon.pb-1 mdi-open-in-new
+
 </template>
 
 <script>
