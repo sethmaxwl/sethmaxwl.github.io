@@ -2,10 +2,9 @@
   div
     v-app-bar#navbar(:flat='true', :color='"#1d1d1d"',
       fixed='', flat='', dark='')
-      v-btn#navbar-icon(fab='', depressed='', color='#1d1d1d',
-        aria-label='navbar menu toggle')
-        v-img(src='@/assets/pineapple.svg', @click.stop='toggleDrawer()',
-          max-width='40', lazy-src='@/assets/pineapple.svg', eager='')
+      v-btn#navbar-icon(depressed='', color='#1d1d1d',
+        aria-label='navbar menu toggle', @click.stop='toggleDrawer()')
+        v-icon.white--text mdi-menu
     v-navigation-drawer#drawer(v-model='drawer',
       temporary='', app='', fixed='', dark='')
       v-list(nav='')
@@ -61,12 +60,15 @@ export default {
 <style lang="scss">
 #navbar {
   height: 64px !important;
-}
-#navbar-icon:hover {
-  .v-image__image {
-    transition-duration: .28s;
-    background-image: url("../assets/pineapple-hover.svg") !important;
+  .v-toolbar__content {
+    height: 64px !important;
+    padding: 0 !important
   }
+}
+#navbar-icon {
+  height: 100%;
+  margin-left: 0 !important;
+  border-radius: 0 !important;
 }
 #navbar-profile {
   width: 125px;

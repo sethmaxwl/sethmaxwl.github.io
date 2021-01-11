@@ -15,13 +15,6 @@
         SVGBlurb(:svg='entry.svg', :title='entry.title',
           :content='entry.content',
           v-bind:class="{ 'pb-15': index !== workflowSections.length - 1}")
-      v-divider.mt-9
-      p.header.text-center Learn More About Me
-      v-row(align='center')
-        v-btn.ml-auto.mr-3(color='primary',
-          @click='redirect("/experience")') Experience
-        v-btn.mr-auto.ml-3(color='primary',
-          @click='redirect("/projects")') Projects
 </template>
 
 <script>
