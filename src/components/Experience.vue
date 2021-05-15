@@ -12,7 +12,7 @@
           v-card-subtitle.card-subheader.pt-0.pb-0
             | Bachelor of Science (2018 - 2021)
           v-card-text.card-description.pt-0.pb-0 Computer Science
-          v-card-text.card-description.pt-0 3.51 GPA
+          v-card-text.card-description.pt-0 3.58 GPA
         v-divider
         v-img.ma-auto.section-profile.mt-5(src='@/assets/work-experience.svg',
           lazy-src='@/assets/work-experience.svg')
